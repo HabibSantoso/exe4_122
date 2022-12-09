@@ -27,7 +27,11 @@ namespace exe4_122
                 Console.WriteLine("\nStack is Full!!! Insertion is not possible!!!");
                 return;
             }
-            
+            else
+            {
+                top++;
+                ele[top] = value;
+            }
         }
     }
     class Program
