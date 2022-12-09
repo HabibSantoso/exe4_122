@@ -19,6 +19,16 @@ namespace exe4_122
             top = -1;
             max = size;
         }
+
+        public void push(char value)
+        {
+            if (top == max - 1)
+            {
+                Console.WriteLine("\nStack is Full!!! Insertion is not possible!!!");
+                return;
+            }
+            
+        }
     }
     class Program
     {
