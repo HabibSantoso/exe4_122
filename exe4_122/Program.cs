@@ -40,6 +40,11 @@ namespace exe4_122
             {
                 Console.WriteLine("\nStack is Empty!!! Deletion is not possible!!!");
             }
+            else
+            {
+                Console.WriteLine("Poped element is: " + ele[top]);
+                top--;
+            }
         }
     }
     class Program
