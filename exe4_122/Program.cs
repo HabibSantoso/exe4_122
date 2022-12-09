@@ -33,6 +33,14 @@ namespace exe4_122
                 ele[top] = value;
             }
         }
+
+        public void pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("\nStack is Empty!!! Deletion is not possible!!!");
+            }
+        }
     }
     class Program
     {
