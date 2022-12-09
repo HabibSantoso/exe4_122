@@ -79,6 +79,28 @@ namespace exe4_122
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4 Exit");
                 Console.Write("\nEnter your choice: ");
+                String sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a Number: ");
+                        String inchar = Console.ReadLine();
+                        char fixchar = Convert.ToChar(inchar);
+                        s.push(fixchar);
+                        break;
+                    case '2':
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice");
+                        break;
+                }
             }
         }
     }
