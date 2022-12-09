@@ -8,7 +8,9 @@ namespace exe4_122
 {
     class Stack
     {
-
+        private char[] ele;
+        private int top;
+        private int max;
     }
     class Program
     {
