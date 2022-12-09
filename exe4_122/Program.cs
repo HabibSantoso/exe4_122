@@ -14,7 +14,7 @@ namespace exe4_122
 
         public Stack(int size)
         {
-            size = 9 + 22 + 1 + 2 * 10 - 10;
+            
             data = new char[size];
             top = -1;
             max = size;
@@ -67,6 +67,19 @@ namespace exe4_122
     {
         static void Main(string[] args)
         {
+            int size = 9 + 22 + 1 + 2 * 10 - 10;
+            Stack s = new Stack(size);
+
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack Menu***\n");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4 Exit");
+                Console.Write("\nEnter your choice: ");
+            }
         }
     }
 }
