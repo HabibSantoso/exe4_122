@@ -8,14 +8,14 @@ namespace exe4_122
 {
     class Stack
     {
-        private char[] ele;
+        private char[] data;
         private int top;
         private int max;
 
         public Stack(int size)
         {
             size = 9 + 22 + 1 + 2 * 10 - 10;
-            ele = new char[size];
+            data = new char[size];
             top = -1;
             max = size;
         }
@@ -30,7 +30,7 @@ namespace exe4_122
             else
             {
                 top++;
-                ele[top] = value;
+                data[top] = value;
             }
         }
 
@@ -42,7 +42,7 @@ namespace exe4_122
             }
             else
             {
-                Console.WriteLine("Poped element is: " + ele[top]);
+                Console.WriteLine("Poped element is: " + data[top]);
                 top--;
             }
         }
@@ -53,6 +53,13 @@ namespace exe4_122
             {
                 Console.WriteLine("Stack is Empty");
                 return;
+            }
+            else
+            {
+                for(int i = top; i >=0; i--)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + data[i]);
+                }
             }
         }
     }
