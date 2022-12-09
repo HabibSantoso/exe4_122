@@ -46,6 +46,15 @@ namespace exe4_122
                 top--;
             }
         }
+
+        public void display()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+        }
     }
     class Program
     {
